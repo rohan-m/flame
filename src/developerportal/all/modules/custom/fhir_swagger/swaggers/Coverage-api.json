@@ -15,25 +15,11 @@
       "application/json+fhir;charset=UTF-8",
       "application/xml+fhir;charset=UTF-8"
    ],
-   "security":[  
-      {  
-         "outhB2C":[  
-            "patient/Coverage.read"
-         ]
-      }
-   ],
    "paths":{  
       "":{  
          "get":{  
             "description":"Search Coverage based on some filter criteria OR Provides provision for pagination (stateid, page, page_size, _pretty & _bundletype are query parameters used for Paging).<p><a href = 'https://www.hl7.org/fhir/coverage.html'>FHIR documentation for Coverage.</a></p>",
             "operationId":"Coverages Search",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Coverage.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -252,13 +238,6 @@
          "post":{  
             "description":"This interaction searches a set of Coverage based on some filter criteria. Search interactions take a series of parameters of name'='value pairs encoded as an application/x-www-form-urlencoded submission for a POST.<p><a href = 'https://www.hl7.org/fhir/coverage.html'>FHIR documentation for Coverage.</a></p>",
             "operationId":"Coverages Search using POST",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Coverage.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -603,13 +582,6 @@
          "get":{  
             "description":"Returns details of Coverage having id given in path.<p><a href = 'https://www.hl7.org/fhir/coverage.html'>FHIR documentation for Coverage.</a></p>",
             "operationId":"Read Coverage",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Coverage.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -660,13 +632,6 @@
          "get":{  
             "description":"Retrieves a summary of the profiles, tags, and security labels for Coverage.<p><a href = 'https://www.hl7.org/fhir/coverage.html'>FHIR documentation for Coverage.</a></p>",
             "operationId":"Coverages Metadata",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Coverage.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -709,13 +674,6 @@
          "get":{  
             "description":"Retrieves a summary of the profiles, tags, and security labels for given Coverage.<p><a href = 'https://www.hl7.org/fhir/coverage.html'>FHIR documentation for Coverage.</a></p>",
             "operationId":"Coverage Metadata",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Coverage.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -766,13 +724,6 @@
          "get":{  
             "description":"Retrieves a summary of the profiles, tags, and security labels for given version of the Coverage.<p><a href = 'https://www.hl7.org/fhir/coverage.html'>FHIR documentation for Coverage.</a></p>",
             "operationId":"Coverage Version based Metadata",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Coverage.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -831,13 +782,6 @@
          "get":{  
             "description":"It retrieves the history of all resources of Coverage.<p><a href = 'https://www.hl7.org/fhir/coverage.html'>FHIR documentation for Coverage.</a></p>",
             "operationId":"Coverages History",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Coverage.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -893,13 +837,6 @@
          "get":{  
             "description":"It retrieves the history of a particular Coverage identified by the given id in path.<p><a href = 'https://www.hl7.org/fhir/coverage.html'>FHIR documentation for Coverage.</a></p>",
             "operationId":"Coverage History",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Coverage.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -963,13 +900,6 @@
          "get":{  
             "description":"This interaction preforms a version specific read of Coverage resource.<p><a href = 'https://www.hl7.org/fhir/coverage.html'>FHIR documentation for Coverage.</a></p>",
             "operationId":"Coverage Version Read",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Coverage.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -1028,13 +958,6 @@
          "get":{  
             "description":"Search the specified resource type in Coverage compartment.<p><a href = 'https://www.hl7.org/fhir/coverage.html'>FHIR documentation for Coverage.</a></p>",
             "operationId":"Compartment Search",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Coverage.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"

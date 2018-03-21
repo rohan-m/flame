@@ -14,25 +14,11 @@
       "application/json+fhir;charset=UTF-8",
       "application/xml+fhir;charset=UTF-8"
    ],
-   "security":[  
-      {  
-         "outhB2C":[  
-            "patient/Encounter.read"
-         ]
-      }
-   ],
    "paths":{  
       "":{  
          "get":{  
             "description":"Returns Encounters based on filter criteria OR Provides provision for pagination (stateid, page, page_size, _pretty & _bundletype are query parameters used for Paging).<p><a href = 'https://www.hl7.org/fhir/encounter.html'>FHIR documentation for Encounter.</a></p>",
             "operationId":"Encounters Search",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Encounter.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -337,13 +323,6 @@
          "post":{  
             "description":"This interaction searches a set of Encounters based on some filter criteria. Search interactions take a series of parameters of name'='value pairs encoded as an application/x-www-form-urlencoded submission for a POST.<p><a href = 'https://www.hl7.org/fhir/encounter.html'>FHIR documentation for Encounter.</a></p>",
             "operationId":"Encounters Search using POST",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Encounter.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -860,13 +839,6 @@
          "get":{  
             "description":"Returns details of encounters having id given in path.<p><a href = 'https://www.hl7.org/fhir/encounter.html'>FHIR documentation for Encounter.</a></p>",
             "operationId":"Read Encounter",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Encounter.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -917,13 +889,6 @@
          "get":{  
             "description":"Retrieves a summary of the profiles, tags, and security labels for Encounter.<p><a href = 'https://www.hl7.org/fhir/encounter.html'>FHIR documentation for Encounter.</a></p>",
             "operationId":"Encounters Metadata",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Encounter.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -966,13 +931,6 @@
          "get":{  
             "description":"Retrieves a summary of the profiles, tags, and security labels for given Encounter.<p><a href = 'https://www.hl7.org/fhir/encounter.html'>FHIR documentation for Encounter.</a></p>",
             "operationId":"Encounter Metadata",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Encounter.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -1023,13 +981,6 @@
          "get":{  
             "description":"Retrieves a summary of the profiles, tags, and security labels for given version of the Encounter.<p><a href = 'https://www.hl7.org/fhir/encounter.html'>FHIR documentation for Encounter.</a></p>",
             "operationId":"Encounter Version based Metadata",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Encounter.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -1088,13 +1039,6 @@
          "get":{  
             "description":"It retrieves the history of all resources of Encounter.<p><a href = 'https://www.hl7.org/fhir/encounter.html'>FHIR documentation for Encounter.</a></p>",
             "operationId":"Encounters History",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Encounter.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -1150,13 +1094,6 @@
          "get":{  
             "description":"It retrieves the history of a particular Encounter identified by the given id in path.<p><a href = 'https://www.hl7.org/fhir/encounter.html'>FHIR documentation for Encounter.</a></p>",
             "operationId":"Encounter History",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Encounter.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -1220,13 +1157,6 @@
          "get":{  
             "description":"This interaction preforms a version specific read of Encounter resource.<p><a href = 'https://www.hl7.org/fhir/encounter.html'>FHIR documentation for Encounter.</a></p>",
             "operationId":"Encounter Version Read",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Encounter.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -1285,13 +1215,6 @@
          "get":{  
             "description":"Search the specified resource type in Encounter compartment.<p><a href = 'https://www.hl7.org/fhir/encounter.html'>FHIR documentation for Encounter.</a></p>",
             "operationId":"Compartment Search",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Encounter.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -1582,13 +1505,6 @@
          "get":{  
             "description":"Returns all the information related to a specific Encounter resource.<p><a href = 'https://www.hl7.org/fhir/encounter.html'>FHIR documentation for Encounter.</a></p>",
             "operationId":"Fetch Encounter Record",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Encounter.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"

@@ -14,25 +14,11 @@
       "application/json+fhir;charset=UTF-8",
       "application/xml+fhir;charset=UTF-8"
    ],
-   "security":[  
-      {  
-         "outhB2C":[  
-            "patient/Medicationorder.read"
-         ]
-      }
-   ],
    "paths":{  
       "":{  
          "get":{  
             "description":"Returns MedicationOrder based on filter criteria OR Provides provision for pagination (stateid, page, page_size, _pretty & _bundletype are query parameters used for Paging).<p><a href = 'https://www.hl7.org/fhir/medicationorder.html'>FHIR documentation for MedicationOrder.</a></p>",
             "operationId":"MedicationOrders Search",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Medicationorder.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -257,13 +243,6 @@
          "post":{  
             "description":"This interaction searches a set of MedicationOrders based on some filter criteria. Search interactions take a series of parameters of name'='value pairs encoded as an application/x-www-form-urlencoded submission for a POST.<p><a href = 'https://www.hl7.org/fhir/medicationorder.html'>FHIR documentation for MedicationOrder.</a></p>",
             "operationId":"MedicationOrders Search using POST",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Medicationorder.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -620,13 +599,6 @@
          "get":{  
             "description":"Returns details of MedicationOrder having id given in path.<p><a href = 'https://www.hl7.org/fhir/medicationorder.html'>FHIR documentation for MedicationOrder.</a></p>",
             "operationId":"Read MedicationOrder",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Medicationorder.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -677,13 +649,6 @@
          "get":{  
             "description":"Retrieves a summary of the profiles, tags, and security labels for MedicationOrder.<p><a href = 'https://www.hl7.org/fhir/medicationorder.html'>FHIR documentation for MedicationOrder.</a></p>",
             "operationId":"MedicationOrders Metadata",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Medicationorder.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -726,13 +691,6 @@
          "get":{  
             "description":"Retrieves a summary of the profiles, tags, and security labels for given MedicationOrder.<p><a href = 'https://www.hl7.org/fhir/medicationorder.html'>FHIR documentation for MedicationOrder.</a></p>",
             "operationId":"MedicationOrder Metadata",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Medicationorder.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -783,13 +741,6 @@
          "get":{  
             "description":"Retrieves a summary of the profiles, tags, and security labels for given version of the MedicationOrder.<p><a href = 'https://www.hl7.org/fhir/medicationorder.html'>FHIR documentation for MedicationOrder.</a></p>",
             "operationId":"MedicationOrder Version based Metadata",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Medicationorder.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -848,13 +799,6 @@
          "get":{  
             "description":"It retrieves the history of all resources of MedicationOrder.<p><a href = 'https://www.hl7.org/fhir/medicationorder.html'>FHIR documentation for MedicationOrder.</a></p>",
             "operationId":"MedicationOrders History",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Medicationorder.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -910,13 +854,6 @@
          "get":{  
             "description":"It retrieves the history of a particular MedicationOrder identified by the given id in path.<p><a href = 'https://www.hl7.org/fhir/medicationorder.html'>FHIR documentation for MedicationOrder.</a></p>",
             "operationId":"MedicationOrder History",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Medicationorder.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -980,13 +917,6 @@
          "get":{  
             "description":"This interaction preforms a version specific read of MedicationOrder resource.<p><a href = 'https://www.hl7.org/fhir/medicationorder.html'>FHIR documentation for MedicationOrder.</a></p>",
             "operationId":"MedicationOrder Version Read",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Medicationorder.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -1045,13 +975,6 @@
          "get":{  
             "description":"Search the specified resource type in MedicationOrder compartment.<p><a href = 'https://www.hl7.org/fhir/medicationorder.html'>FHIR documentation for MedicationOrder.</a></p>",
             "operationId":"Compartment Search",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Medicationorder.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"

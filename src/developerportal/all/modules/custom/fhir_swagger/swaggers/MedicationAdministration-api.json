@@ -14,25 +14,11 @@
       "application/json+fhir;charset=UTF-8",
       "application/xml+fhir;charset=UTF-8"
    ],
-   "security":[  
-      {  
-         "outhB2C":[  
-            "patient/Medicationadministration.read"
-         ]
-      }
-   ],
    "paths":{  
       "":{  
          "get":{  
             "description":"Returns MedicationAdministrations based on filter criteria OR Provides provision for pagination (stateid, page, page_size, _pretty & _bundletype are query parameters used for Paging).<p><a href = 'https://www.hl7.org/fhir/medicationadministration.html'>FHIR documentation for MedicationAdministration.</a></p>",
             "operationId":"MedicationAdministrations Search",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Medicationadministration.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -275,13 +261,6 @@
          "post":{  
             "description":"This interaction searches a set of MedicationAdministrations based on some filter criteria. Search interactions take a series of parameters of name'='value pairs encoded as an application/x-www-form-urlencoded submission for a POST.<p><a href = 'https://www.hl7.org/fhir/medicationadministration.html'>FHIR documentation for MedicationAdministration.</a></p>",
             "operationId":"MedicationAdministrations Search using POST",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Medicationadministration.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -674,13 +653,6 @@
          "get":{  
             "description":"Returns details of MedicationAdministration having id given in path.<p><a href = 'https://www.hl7.org/fhir/medicationadministration.html'>FHIR documentation for MedicationAdministration.</a></p>",
             "operationId":"Read MedicationAdministration",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Medicationadministration.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -731,13 +703,6 @@
          "get":{  
             "description":"Retrieves a summary of the profiles, tags, and security labels for MedicationAdministration.<p><a href = 'https://www.hl7.org/fhir/medicationadministration.html'>FHIR documentation for MedicationAdministration.</a></p>",
             "operationId":"MedicationAdministrations Metadata",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Medicationadministration.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -780,13 +745,6 @@
          "get":{  
             "description":"Retrieves a summary of the profiles, tags, and security labels for given MedicationAdministration.<p><a href = 'https://www.hl7.org/fhir/medicationadministration.html'>FHIR documentation for MedicationAdministration.</a></p>",
             "operationId":"MedicationAdministration Metadata",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Medicationadministration.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -837,13 +795,6 @@
          "get":{  
             "description":"Retrieves a summary of the profiles, tags, and security labels for given version of the MedicationAdministration.<p><a href = 'https://www.hl7.org/fhir/medicationadministration.html'>FHIR documentation for MedicationAdministration.</a></p>",
             "operationId":"MedicationAdministration Version based Metadata",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Medicationadministration.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -902,13 +853,6 @@
          "get":{  
             "description":"It retrieves the history of all resources of MedicationAdministration.<p><a href = 'https://www.hl7.org/fhir/medicationadministration.html'>FHIR documentation for MedicationAdministration.</a></p>",
             "operationId":"MedicationAdministrations History",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Medicationadministration.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -964,13 +908,6 @@
          "get":{  
             "description":"It retrieves the history of a particular MedicationAdministration identified by the given id in path.<p><a href = 'https://www.hl7.org/fhir/medicationadministration.html'>FHIR documentation for MedicationAdministration.</a></p>",
             "operationId":"MedicationAdministration History",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Medicationadministration.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -1034,13 +971,6 @@
          "get":{  
             "description":"This interaction preforms a version specific read of MedicationAdministration resource.<p><a href = 'https://www.hl7.org/fhir/medicationadministration.html'>FHIR documentation for MedicationAdministration.</a></p>",
             "operationId":"MedicationAdministration Version Read",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Medicationadministration.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -1099,13 +1029,6 @@
          "get":{  
             "description":"Search the specified resource type in MedicationAdministration compartment.<p><a href = 'https://www.hl7.org/fhir/medicationadministration.html'>FHIR documentation for MedicationAdministration.</a></p>",
             "operationId":"Compartment Search",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Medicationadministration.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"

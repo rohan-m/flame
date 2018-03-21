@@ -14,25 +14,11 @@
       "application/json+fhir;charset=UTF-8",
       "application/xml+fhir;charset=UTF-8"
    ],
-   "security":[  
-      {  
-         "outhB2C":[  
-            "patient/Immunization.read"
-         ]
-      }
-   ],
    "paths":{  
       "":{  
          "get":{  
             "description":"Returns Immunizations based on filter criteria OR Provides provision for pagination (stateid, page, page_size, _pretty & _bundletype are query parameters used for Paging).<p><a href = 'https://www.hl7.org/fhir/immunization.html'>FHIR documentation for Immunization.</a></p>",
             "operationId":"Immunizations Search",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Immunization.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -313,13 +299,6 @@
          "post":{  
             "description":"This interaction searches a set of Immunizations based on some filter criteria. Search interactions take a series of parameters of name'='value pairs encoded as an application/x-www-form-urlencoded submission for a POST.<p><a href = 'https://www.hl7.org/fhir/immunization.html'>FHIR documentation for Immunization.</a></p>",
             "operationId":"Immunizations Search using POST",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Immunization.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -788,13 +767,6 @@
          "get":{  
             "description":"Returns details of Immunization having id given in path.<p><a href = 'https://www.hl7.org/fhir/immunization.html'>FHIR documentation for Immunization.</a></p>",
             "operationId":"Read Immunization",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Immunization.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -845,13 +817,6 @@
          "get":{  
             "description":"Retrieves a summary of the profiles, tags, and security labels for Immunization.<p><a href = 'https://www.hl7.org/fhir/immunization.html'>FHIR documentation for Immunization.</a></p>",
             "operationId":"Immunizations Metadata",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Immunization.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -894,13 +859,6 @@
          "get":{  
             "description":"Retrieves a summary of the profiles, tags, and security labels for given Immunization.<p><a href = 'https://www.hl7.org/fhir/immunization.html'>FHIR documentation for Immunization.</a></p>",
             "operationId":"Immunization Metadata",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Immunization.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -951,13 +909,6 @@
          "get":{  
             "description":"Retrieves a summary of the profiles, tags, and security labels for given version of the Immunization.<p><a href = 'https://www.hl7.org/fhir/immunization.html'>FHIR documentation for Immunization.</a></p>",
             "operationId":"Immunization Version based Metadata",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Immunization.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -1016,13 +967,6 @@
          "get":{  
             "description":"It retrieves the history of all resources of Immunization.<p><a href = 'https://www.hl7.org/fhir/immunization.html'>FHIR documentation for Immunization.</a></p>",
             "operationId":"Immunizations History",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Immunization.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -1078,13 +1022,6 @@
          "get":{  
             "description":"It retrieves the history of a particular Immunization identified by the given id in path.<p><a href = 'https://www.hl7.org/fhir/immunization.html'>FHIR documentation for Immunization.</a></p>",
             "operationId":"Immunization History",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Immunization.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -1148,13 +1085,6 @@
          "get":{  
             "description":"This interaction preforms a version specific read of Immunization resource.<p><a href = 'https://www.hl7.org/fhir/immunization.html'>FHIR documentation for Immunization.</a></p>",
             "operationId":"Immunization Version Read",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Immunization.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -1213,13 +1143,6 @@
          "get":{  
             "description":"Search the specified resource type in Immunization compartment.<p><a href = 'https://www.hl7.org/fhir/immunization.html'>FHIR documentation for Immunization.</a></p>",
             "operationId":"Compartment Search",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Immunization.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"

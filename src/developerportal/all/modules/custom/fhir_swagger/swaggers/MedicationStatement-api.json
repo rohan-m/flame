@@ -14,13 +14,6 @@
       "application/json+fhir;charset=UTF-8",
       "application/xml+fhir;charset=UTF-8"
    ],
-   "security":[  
-      {  
-         "outhB2C":[  
-            "patient/Medicationstatement.read"
-         ]
-      }
-   ],
    "paths":{  
       "":{  
          "get":{  
@@ -29,13 +22,6 @@
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
-            ],
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Medicationstatement.read"
-                  ]
-               }
             ],
             "parameters":[  
                {  
@@ -251,13 +237,6 @@
          "post":{  
             "description":"This interaction searches a set of MedicationStatements based on some filter criteria. Search interactions take a series of parameters of name'='value pairs encoded as an application/x-www-form-urlencoded submission for a POST.<p><a href = 'https://www.hl7.org/fhir/medicationstatement.html'>FHIR documentation for MedicationStatement.</a></p>",
             "operationId":"MedicationStatements Search using POST",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Medicationstatement.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -602,13 +581,6 @@
          "get":{  
             "description":"Returns details of MedicationStatement having id given in path.<p><a href = 'https://www.hl7.org/fhir/medicationstatement.html'>FHIR documentation for MedicationStatement.</a></p>",
             "operationId":"Read MedicationStatement",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Medicationstatement.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -659,13 +631,6 @@
          "get":{  
             "description":"Retrieves a summary of the profiles, tags, and security labels for MedicationStatement.<p><a href = 'https://www.hl7.org/fhir/medicationstatement.html'>FHIR documentation for MedicationStatement.</a></p>",
             "operationId":"MedicationStatements Metadata",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Medicationstatement.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -708,13 +673,6 @@
          "get":{  
             "description":"Retrieves a summary of the profiles, tags, and security labels for given MedicationStatement. resource.<p><a href = 'https://www.hl7.org/fhir/medicationstatement.html'>FHIR documentation for MedicationStatement.</a></p>",
             "operationId":"MedicationStatement Metadata",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Medicationstatement.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -765,13 +723,6 @@
          "get":{  
             "description":"Retrieves a summary of the profiles, tags, and security labels for given version of the MedicationStatement.<p><a href = 'https://www.hl7.org/fhir/medicationstatement.html'>FHIR documentation for MedicationStatement.</a></p>",
             "operationId":"MedicationStatement Version based Metadata",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Medicationstatement.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -830,13 +781,6 @@
          "get":{  
             "description":"It retrieves the history of all resources of MedicationStatement.<p><a href = 'https://www.hl7.org/fhir/medicationstatement.html'>FHIR documentation for MedicationStatement.</a></p>",
             "operationId":"MedicationStatements History",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Medicationstatement.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -892,13 +836,6 @@
          "get":{  
             "description":"It retrieves the history of a particular MedicationStatement identified by the given id in path.<p><a href = 'https://www.hl7.org/fhir/medicationstatement.html'>FHIR documentation for MedicationStatement.</a></p>",
             "operationId":"MedicationStatement History",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Medicationstatement.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -962,13 +899,6 @@
          "get":{  
             "description":"This interaction preforms a version specific read of MedicationStatement resource.<p><a href = 'https://www.hl7.org/fhir/medicationstatement.html'>FHIR documentation for MedicationStatement.</a></p>",
             "operationId":"MedicationStatement Version Read",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Medicationstatement.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
@@ -1027,13 +957,6 @@
          "get":{  
             "description":"Search the specified resource type in MedicationStatement compartment.<p><a href = 'https://www.hl7.org/fhir/medicationstatement.html'>FHIR documentation for MedicationStatement.</a></p>",
             "operationId":"Compartment Search",
-            "security":[  
-               {  
-                  "outhB2C":[  
-                     "patient/Medicationstatement.read"
-                  ]
-               }
-            ],
             "produces":[  
                "application/json+fhir;charset=UTF-8",
                "application/xml+fhir;charset=UTF-8"
